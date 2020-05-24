@@ -1,20 +1,139 @@
-<!DOCTYPE>
-<html>
-<style>
-</style>
-<head>
-<title>NavBar</title>
-</head>
+<main id="main">
+   <style>
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+    body{
+      font-family:sans-serif;
+      font-weight:strong
+    }
+	h1{
+      text-align:center;
+      font-size:80px;
+      font-family:sans-serif;
+      font-weight:strong;
+}
+.coldbrew{
+      width:100%;
+      height:900px;
+      display:inline-block;
+      float:left;
+}
+#header{
+  background-color: #ffbf00;
+  height:100px;
+  display:flex;
+}
+    .nav-link{
+      padding:70px;
+      color:black;
+      top: 0px;
+      display:inline-block;
+      font-family:sans-serif;
+      text-align:center;
+      font-size:25px;
+      }
+#nav-bar{
+      top: 0px;
+      overflow: hidden;
+      position: fixed;
+}
+      section{
+      padding-top:50px;
+      padding-bottom:50px;}
+.container{
+  display: flex;
+  flex-direction:row;
+  text-align:center;
+  margin: 0 auto;
+}   
+#box-1{
+  background-color:green;
+  border:black 3px solid;
+  height:200px;
+  width:200px;
+  justify-content:space-evenly;
+  padding:10px;
+  font-size:25px;
+  display:inline-block;
+  margin: 0 auto;
+}
+#box-2{
+  background-color:green;
+  height:200px;
+  width:200px;
+  justify-content:space-evenly;
+  border:black 3px solid;
+  padding:10px;
+  font-size:25px;
+  display:inline-block;
+  margin:0 auto;
+}
+#box-3{
+  background-color:green;
+  height:200px;
+  width:200px;
+  justify-content:center;
+  border:black 3px solid;
+  padding:10px;
+  font-size:25px;
+  display:inline-block;
+  margin:0 auto;
+}
+p{
+  margin:5em;
+  font-size:20px;
+}
+   </style>
+<header id="header"><img id="header-img"  img src="https://bestofcraftbeerawards.com/wp-content/uploads/2016/02/Best-of-Craft-Beer-Awards-Logo.png" width="100px">
+  <nav id="nav-bar">
+    <a class="nav-link" href="#about">About</a>
+    <a class="nav-link" href="#beer-styles">Beer Styles</a>
+    <a class="nav-link" href="#where-to-find">Where to Find Us</a>
+  </nav>
+  </header>
 <body>
-
-
-<header>
-  <div class="container"
-  
-  <img src=""https://bestofcraftbeerawards.com/wp-content/uploads/2016/02/Best-of-Craft-Beer-Awards-Logo.png">
-  <nav>
-  <ul>
-  <li><a href="#">About</a></li>
-  <li><a href="#">Beer Styles</a></li>
-  <li><a href="#">Where To Buy</a><li>
-  
+  <id= "title" better days brewery> <h1>Better Days Brewing</h1>
+  <img src="https://cdn-ds.com/media/websites/3760/content/Beer_2.png?s=1394046" class="coldbrew">
+  <section id="about"></section>
+  <br>Better Days Brewing is an Boston Based Brewey located in the Seaport District. At Better Days Brewing we know that nothing makes a day better then a good brew.
+Better Days Brewing was started by two brothers- Ted and Bill. The first Better Days Brewing was located in Ted's garage. At first Ted and Bill brewed beer for family and friends. Soon they realized that they wanted to turn their passion into a career.
+  They went to a local beer festival in Seaport and got rave reveiws. They also earned their first award for best new beer by a new brewery. 
+  The two brothers contiuned their work. They have picked up a few more awards. Their Hazey Crazy Beer got a "Gold Standard" award in the Hazey Beer category. They were also named "Brewery to Watch" by Alehouse Magazine. They perfected their porcess. They also spend a lot of nights and days and weekends in that garage until they finally opened up a brewery in the Seaport district.
+  What about now? Now the two brothers brew over fifteen different beers. They compete in mutiple competetions across the country. We hope you enjoy our beer.</p>
+<center><section id="beer-styles"></section>
+  <h2>Beer Styles</h2>
+<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/nC4RIbrci5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+  <center>  <h2>Where to Find</h2></center>
+<section id="where-to-find"></section>
+   <div class="container" "box-container">
+  <div id="box-1">Liquor Stores
+      across New England and Reba's Convenience Store</div>
+  <div id="box-2">Restaurants including Tim's Diner <br> and Ed's Legendary Steak House</div>
+  <div id="box-3">Our Brewery located in Massachusetts. <br>Tours avaliable by appointment</div>
+    </div>
+  <br>
+  <br>
+  <center><form id="form" action="https://www.freecodecamp.com/email-submit"> 
+    <input id="email" type="email" name="email" placeholder="Email us for more information" required/>
+  <input id="submit" type="submit"/></input>
+</form></center>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</main>
